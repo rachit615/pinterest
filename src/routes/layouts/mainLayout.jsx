@@ -1,7 +1,7 @@
 import React from "react";
 import LeftBar from "../../components/leftBar/leftBar";
 import TopBar from "../../components/topBar/topBar";
-import Gallery from "../../components/gallery/gallery";
+import { Outlet } from "react-router";
 
 const MainLayout = () => {
   return (
@@ -10,7 +10,7 @@ const MainLayout = () => {
         <LeftBar />
         <div className="content">
           <TopBar />
-          <Gallery />
+          <Outlet />
         </div>
       </div>
     </div>

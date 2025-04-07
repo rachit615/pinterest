@@ -1,7 +1,8 @@
 import React from "react";
+import Gallery from "../../components/gallery/gallery";
 
 const Homepage = () => {
-  return <div>Homepage</div>;
+  return <Gallery />;
 };
 
 export default Homepage;
