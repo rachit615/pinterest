@@ -23,8 +23,8 @@ const PostInteractions = () => {
             />
           </svg>
           {2}
-          <Image src="/general/share.svg" alt="" />
-          <Image src="/general/more.svg" alt="" />
+          <Image path="/general/share.svg" alt="" />
+          <Image path="/general/more.svg" alt="" />
         </div>
         <button onClick={() => {}}>{"Saved"}</button>
       </div>

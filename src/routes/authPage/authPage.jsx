@@ -12,7 +12,7 @@ const AuthPage = () => {
     <div>
       <div className="authPage">
         <div className="authContainer">
-          <Image src="/general/logo.png" w={36} h={36} alt="" />
+          <Image path="/general/logo.png" w={36} h={36} alt="" />
           <h1>{isRegister ? "Create an Account" : "Login to your account"}</h1>
           {isRegister ? (
             <form key="register" onSubmit={handleSubmit}>

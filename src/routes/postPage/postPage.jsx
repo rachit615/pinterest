@@ -18,7 +18,7 @@ const PostPage = () => {
       </svg>
       <div className="postContainer">
         <div className="postImg">
-          <Image src={"/pins/pin17.jpeg"} alt="" w={736} h={500} />
+          <Image path={"/pins/pin17.jpeg"} alt="" w={736} h={500} />
         </div>
         <div className="postDetails">
           <PostInteractions />

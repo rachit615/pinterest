@@ -19,7 +19,7 @@ const CreatePage = () => {
           <label htmlFor="file" className="upload">
             {/* htmlFor is used with id of input so that  */}
             <div className="uploadTitle">
-              <Image src="/general/upload.svg" alt="" />
+              <Image path="/general/upload.svg" alt="" />
               <span>Choose a file</span>
             </div>
             <div className="uploadInfo">

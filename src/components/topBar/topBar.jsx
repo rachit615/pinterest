@@ -7,7 +7,7 @@ const TopBar = () => {
   return (
     <div className="topBar">
       <div className="searchBar">
-        <Image src="/general/search.svg" alt="" />
+        <Image path="/general/search.svg" alt="" />
         <input type="text" placeholder="Search" />
       </div>
 

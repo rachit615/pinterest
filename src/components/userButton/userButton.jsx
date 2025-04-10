@@ -13,9 +13,9 @@ const UserButton = () => {
 
   return currentUser ? (
     <div className="userButton">
-      <Image src="/general/noAvatar.png" alt="" />
+      <Image path="/general/noAvatar.png" alt="" />
       <div onClick={() => setOpen((prev) => !prev)}>
-        <Image src="/general/arrow.svg" alt="" className="arrow" />
+        <Image path="/general/arrow.svg" alt="" className="arrow" />
       </div>
       {open && (
         <div className="userOptions">
