@@ -1,0 +1,26 @@
+.sortableList {
+  overflow: auto;
+  height: 400px;
+  border: 1px solid blue;
+}
+
+.row-x {
+  cursor: grab;
+  height: 42px;
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row-x:active {
+  cursor: grabbing;
+}
+
+.grabbing {
+  background-color: lightsalmon;
+}
+
+.drop-zone {
+  background-color: blue;
+}
