@@ -12,7 +12,6 @@ export default function SortableList({ data = [] }) {
   };
 
   const handleDragStart = (e, idx) => {
-    console.log("drag start", e.target);
     setStartIndex(idx);
     // clone the original element
 
