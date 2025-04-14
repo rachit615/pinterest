@@ -5,7 +5,13 @@ export default function Switch({ isOn, onToggle, label }) {
   return (
     <div className={`switch ${isOn ? "on" : ""}`}>
       <label>
-        <input type="checkbox" checked={isOn} onChange={onToggle} />
+        <input
+          type="checkbox"
+          checked={isOn}
+          onChange={onToggle}
+          role="switch"
+          aria-checked={isOn}
+        />
         <span className="switch-track"></span>
       </label>
     </div>

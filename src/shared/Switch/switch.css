@@ -41,3 +41,7 @@
 .switch.on .switch-track {
   background-color: blue;
 }
+
+.switch:has(input:focus-visible) {
+  outline: 4px solid green;
+}
