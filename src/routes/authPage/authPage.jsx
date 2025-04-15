@@ -1,12 +1,27 @@
 import React, { useState } from "react";
 import Image from "../../components/Image/Image";
 import "./authPage.css";
+import apiRequest from "../../utils/apiRequest";
 
 const AuthPage = () => {
   const [isRegister, setIsRegister] = useState(false);
   const [error, setError] = useState("");
 
-  const handleSubmit = () => {};
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData);
+    try {
+      const res = await apiRequest.post(
+        `/users/auth/${isRegister ? "register" : "login"}`,
+        data
+      );
+
+      console.log("res", res);
+    } catch (error) {
+      setError(error.response.data.message);
+    }
+  };
 
   return (
     <div>
